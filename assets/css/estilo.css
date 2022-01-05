@@ -54,6 +54,47 @@ body{
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.2);
 }
 
+.modulos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.modulo {
+    flex-basis: 32%;  /* Faz com que cada elemento oculpe 32% da tela*/
+}
+
+.modulo > h3 {
+    margin: 0;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: #1867c0;
+}
+
+.modulo > ul {
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.modulo > ul > li {
+    padding: 7px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.modulo > ul > li > a {
+    display: flex;
+    text-decoration: none;
+    color: #222;
+}
+
+.modulo > ul > li:hover {
+    background-color: #eee;
+}
+
 .rodape{
     grid-area: rodape;
     background-color: #fff;
